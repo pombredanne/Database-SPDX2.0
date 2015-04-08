@@ -79,15 +79,7 @@ CREATE TABLE spdx_extracted_lic_info (
     CONSTRAINT spdx_extracted_lic_info_pk PRIMARY KEY (identifier,spdx_fk)
 );
 
-CREATE TABLE spdx_license_list (
-    license_list_pk        integer,  -- Primary Key
-    license_identifier       text NOT NULL,
-    license_fullname         text NOT NULL,
-    license_matchname_1   text,
-    license_matchname_2        text,
-    license_matchname_3         text,
-    CONSTRAINT spdx_license_list_pk PRIMARY KEY (license_list_pk)
-);
+
 
 CREATE TABLE spdx_annotations_create (
     annotator_info_pk		integer,  -- Primary Key
